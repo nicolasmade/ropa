@@ -171,9 +171,9 @@ angular.module("ropa.controllers", [])
 					for(var e = 0; e < keys.length ; e++) {
 						localforage.setItem(keys[e],[]);
 					}
-					$state.go("ropa.dashboard");
+					$state.go("ropa.form_login");
 				}).catch(function(err) {
-					$state.go("ropa.dashboard");
+					$state.go("ropa.form_login");
 				});
 			}
 			$rootScope.closeMenuPopover();
@@ -1516,7 +1516,7 @@ $ionicConfig.backButton.text("");
 			scope: $scope,
 			buttons: [
 				{text:"Cancel",onTap: function(e){
-					$state.go("ropa.dashboard");
+					$state.go("ropa.form_login");
 				}},
 				{text:"<strong>Save</strong>",type:"button-positive",onTap:function(e){
 						return $scope.form;

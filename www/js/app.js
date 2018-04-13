@@ -37,7 +37,7 @@ angular.module("ropa", ["ngCordova","ionic","ionMdInput","ionic-material","ion-d
 			if($ionicHistory.backView()){
 				$ionicHistory.goBack();
 			}else{
-				$state.go("ropa.dashboard");
+				$state.go("ropa.form_login");
 			}
 			e.preventDefault();
 			return false;
@@ -304,5 +304,5 @@ angular.module("ropa", ["ngCordova","ionic","ionMdInput","ionic-material","ion-d
 		}
 	})
 
-	$urlRouterProvider.otherwise("/ropa/dashboard");
+	$urlRouterProvider.otherwise("/ropa/form_login");
 });
